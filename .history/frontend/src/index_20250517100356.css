@@ -1,0 +1,3 @@
+.flex1 ::-webkit-scrollbar{
+  display: none;
+}

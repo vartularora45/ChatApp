@@ -1,0 +1,16 @@
+import React from 'react'
+import ChatUsers from './ChatUsers'
+import TypeSend from './TypeSend'
+
+const Right = () => {
+  return (
+    <div
+    className='w-[70%] h-screen bg-slate-500 text-white '
+    ><ChatUsers />
+    <TypeSend
+    </div>
+
+  )
+}
+
+export default Right

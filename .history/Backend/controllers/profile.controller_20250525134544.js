@@ -1,0 +1,1 @@
+import Profile from '../models/profile.model.js'; from "../db/profile.model";

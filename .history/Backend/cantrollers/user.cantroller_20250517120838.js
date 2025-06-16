@@ -1,0 +1,22 @@
+import User from "../db/user.model";
+
+
+export const signUp = async (req,res) =>{
+    const {username, email, password, confirmPassword} = req.body
+    try {
+        if(!username || !email || !password || !confirmPassword) {
+            return res.status(400).json({message: "All fields are required"});
+        }
+        if(password !== confirmPassword) {
+            return res.status(400).json({message: "Passwords do not match"});
+        }
+        const user = await User.findOne({email});
+        if(user) {
+            return res.status(400).json({message: "User already exists"});
+        }
+        const has
+    } catch (error) {
+        res.status(500).json({message: "Internal Server Error"});
+        console.log(error);
+    }
+}
