@@ -1,3 +1,0 @@
-
-
-const socketContext = React.createContext();

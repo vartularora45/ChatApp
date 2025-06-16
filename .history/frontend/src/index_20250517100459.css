@@ -1,8 +1,0 @@
-.flex1 {
-  -ms-overflow-style: none;  /* IE/Edge */
-  scrollbar-width: none;     /* Firefox */
-}
-
-.flex1::-webkit-scrollbar {
-  display: none;             /* Chrome, Safari, Edge */
-}
