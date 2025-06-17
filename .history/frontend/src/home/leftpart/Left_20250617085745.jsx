@@ -1,7 +1,7 @@
 import React from 'react'
 import Search from './Search.jsx'
 import Users from './Users.jsx'
-import Logout from './Logout.jsx'
+import Logout from './ogout.jsx'
 import Profile from './Profile.jsx'
 const Left = () => {
 
