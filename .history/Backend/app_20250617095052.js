@@ -13,7 +13,7 @@ app.use(cookieParser());           // <-- Use cookie-parser middleware
 
 
 app.use(cors({
-  origin: "*",
+  origin: "",
   credentials: true,
 }));
                     // <-- Move cors here
