@@ -15,7 +15,7 @@ app.use(cookieParser());           // <-- Use cookie-parser middleware
 
 
 app.use(cors({
-// frontend URL
+  origin: "https://chatapp376.vercel.app", // frontend URL
 }));
 
                     // <-- Move cors here
