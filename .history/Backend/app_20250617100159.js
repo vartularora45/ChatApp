@@ -12,7 +12,7 @@ connectDb();
 app.use(cookieParser());           // <-- Use cookie-parser middleware
 
 
-
+const cors = require("cors");
 
 app.use(cors({
   origin: "https://chatapp376.vercel.app", // frontend URL
