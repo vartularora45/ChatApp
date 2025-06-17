@@ -10,7 +10,7 @@ const app = express();
 
 connectDb();
 app.use(cookieParser());           // <-- Use cookie-parser middleware
-
+const cors = require('cors');
 
 app.use(cors({
   origin: ['http://localhost:5173', 'https://chatapp89.vercel.app'],
