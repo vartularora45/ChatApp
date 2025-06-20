@@ -9,15 +9,21 @@ export const getRecieverSocketId = (receiverId) => {
 
 export const initSocket = (server) => {
     io = new Server(server, {
-        cors: {
-            origin: [
+       const allowedOrigins = [
   "http://localhost:5173",
   "https://chat-app-cyan-ten-50.vercel.app",
   "https://chatuapp.me",
   "https://www.chatuapp.me"
-],
-            credentials: true,
-        },
+];
+
+const io = require("socket.io")(server, {
+  cors: {
+    origin: allowedOrigins,
+    credentials: true,
+    methods: ["GET", "POST"]
+  }
+});
+
     });
 
     io.on('connection', (socket) => {
