@@ -15,11 +15,11 @@ const createdTokenAndSaveCookie = (userId, res) => {
 
   // Set cookie
   res.cookie("jwt", token, {
-    httpOnly: true,
-    secure: false, // ✅ Dev ke liye false rakho
-    sameSite: "Lax", // ✅ Cross-origin avoid karne ke liye 'Lax'
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-  });
+  httpOnly: true,
+  secure: false,         // ✅ Dev ke liye false rakho
+  sameSite: "Lax",       // ✅ Cross-origin avoid karne ke liye 'Lax'
+  maxAge: 30 * 24 * 60 * 60 * 1000,
+});
 
   console.log("Cookie set in response:", res.getHeaders());
 
