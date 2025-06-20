@@ -14,10 +14,13 @@ app.use(cookieParser());           // <-- Use cookie-parser middleware
 
 
 
+
+// 👇 Isko add kar de before routes
 app.use(cors({
-    
-// frontend URL
+  origin: "https://chat-app-cyan-ten-50.vercel.app", // <-- 👈 Your Vercel frontend URL
+  credentials: true
 }));
+
 
                     // <-- Move cors here
 app.use(express.json());            // <-- move JSON parser here
