@@ -9,7 +9,7 @@ const useGetAllUsers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        
+        const token = Cookies.get("jwt");
         const response = await API.get("/api/users/getallusers", {
           withCredentials: true,
         });
