@@ -17,10 +17,9 @@ app.use(cookieParser());           // <-- Use cookie-parser middleware
 
 // 👇 Isko add kar de before routes
 app.use(cors({
-  origin: ['https://www.chatuapp.me', 'https://chat-app-cyan-ten-50.vercel.app'],
+  origin: "https://chat-app-cyan-ten-50.vercel.app", // <-- 👈 Your Vercel frontend URL
   credentials: true
 }));
-
 
 
                     // <-- Move cors here
