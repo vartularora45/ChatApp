@@ -35,7 +35,7 @@ app.use(
       }
     },
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"] // 🔥 THIS IS THE FIX
+    allowedHeaders: ["Content-Type", "Authorization"]** // 🔥 THIS IS THE FIX
   })
 );
 
