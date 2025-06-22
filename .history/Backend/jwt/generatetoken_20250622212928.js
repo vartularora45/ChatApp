@@ -9,13 +9,7 @@ const createdTokenAndSaveCookie = (userId, res) => {
     expiresIn: "30d",
   });
 
-  res.cookie("jwt", token, {
-  httpOnly: true,
-  secure: true,
-  sameSite: "None", // ← this is the key part!
-  maxAge: 30 * 24 * 60 * 60 * 1000,
-});
-
+  
 
   console.log("✅ Token created and cookie set");
   return token;
