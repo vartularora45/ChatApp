@@ -29,16 +29,15 @@ const Login = () => {
 
     try {
       const res = await API.post(
-  "/api/users/login",
-  { email, password },
-  {
-    headers: {
-      "Content-Type": "application/json",
-    },
-    withCredentials: true, // 👈 ye zaroori hai bhai!
-  }
-);
-
+        "/api/users/login",
+        { email, password },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+          cre
+        }
+      );
 
       if (res.data.user) {
         setSuccess("Login successful! Redirecting...");
