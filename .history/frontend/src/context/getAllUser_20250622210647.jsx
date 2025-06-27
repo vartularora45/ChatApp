@@ -8,15 +8,7 @@ const useGetAllUsers = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const token = localStorage.getItem("token");
-        if (!token) throw new Error("No token found");
-
-        const response = await API.get("/api/users/getallusers", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
+        const response = await API.get("/api/users/getallusers");
         setGetAllUser(response.data);
       } catch (error) {
         console.error("🚨 Error fetching users:", error.response?.data || error.message);
